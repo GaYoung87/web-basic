@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hi, HTML!</title>
+</head>
+<body>
+  <!-- Heading -->
+  <h1>Hi, h1!</h1>
+  <h2>Hi, h2!</h2>
+  <h3>Hi, h3!</h3>
+  <h4>Hi, h4!</h4>
+  <h5>Hi, h5!</h5>
+  <h6>Hi, h6!</h6>
+
+  <!-- Bold -->
+  <div>
+    <b>This is bold.</b>
+    <strong>This is storng. (sementic)</strong>
+  </div>
+
+  <!-- Italic -->
+  <div>
+    <i>This is italic.</i>
+    <em>This is em. (sementic)</em>  <!-- emphasized (강조)-->
+  </div>
+
+  <!-- hilighted -->
+  <h2>This is <mark>Mark</mark>. </h2>
+
+  <!-- de; / ins -->
+  <h2>This is <del>del</del>.</h2>
+  <h2>This is <ins>ins</ins>.</h2>
+
+  <!-- sub / sup -->
+  <h2>This is <sub>sub</sub>.</h2>
+  <h2>This is <sup>sup</sup>.</h2>
+
+  <!-- p / br -->
+  <p>
+    This is p tag.<br/>  <!-- br은 selfclosing-->
+    This is p tag.<br/>
+    This is p tag.
+  </p>
+
+  <!-- pre -->  <!-- 블로그 만들 때, 테그같은걸 pre 안에 넣음-->
+  <pre>
+    from flask import flask
+    app = Flask(__name__)
+
+    @app.route('/')
+    def hello():
+    return 'Hello, world'
+  </pre>
+
+  <!-- hr : divider 역할로써 줄을 그어주는 친구-->
+  <hr/>
+
+  <!-- q / blockquote -->
+  <p>  <!-- 인용문이기 때문에 하나의 텍스트로 인정하지 않음 -> 복사할 때, ""는 복사되지 않음-->
+    Jason said, <q>May you have Happy Hacking.</q>
+  </p>
+  <blockquote>
+    May you have Happy Hacking
+  </blockquote>
+
+  <!-- ol / ul / li -->
+  <ol>  <!-- ordered list : 순서 있음 -> 1. 2. 3. -->
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+  </ol>
+  <ul>  <!-- unordered list : 순서 없음 -> * * * -->
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+  </ul>
+
+
+</body>
+</html>

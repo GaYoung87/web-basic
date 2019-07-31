@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>프로그래밍 교육</title>
+  <style>
+    nav img {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>프로그래밍 교육</h1>
+  <nav>
+    <a href="#python">  <!-- id로 링크 걸기 -->
+      <img src="images/python.png" alt="python"/>
+    </a>
+    <a href="#web">
+      <img src="images/html.png" alt="html"/>
+    </a>
+    <a href="02_index.html">참고사이트</a>  <!-- 상대 경로 -->
+    <a href="mailto:edujason.hphk@gmail.com">메일 보내기</a>  <!-- 메일 보내기-->
+  </nav>
+  <hr/>  <!-- hr : divider 역할로써 줄을 그어주는 친구-->
+
+  <header id="python">
+    <h2>
+      <a href="https://docs.python.org/ko/3/tutorial/index.html" target="_blank">파이썬</a>  <!-- 절대 경로(위치)로 이동 -->
+    </h2>
+  </header>
+  <article>
+    <h3>Number type</h3>
+    <p>파이썬에서 숫자형은 아래와 같이 있다.</p>
+    <ol>
+      <li>int</li>
+      <li>float</li>
+      <li>complex</li>
+      <li><del>str</del></li>    
+    </ol>
+    <h3>Sequence</h3>
+    <p>파이썬에서 시퀀스는 아래와 같이 있다.</p>  <!--blockdisplay, p:-->
+    <p><strong>시퀀스는 for문을 돌릴 수 있다!!</strong></p>  <!-- strong은 자기 컨텐츠만큼만 함 -> in line -->
+    <ol>  <!--strong은 특정 효과만 주기 위함. p테그는 문장을 작성하기 위함-->
+      <li>str</li>
+      <li>list</li>
+      <li>tuple</li>
+      <li>range</li>   
+    </ol>
+  </article>
+
+  <hr/>
+
+  <header>
+    <h2 id="web">
+      <a href="https://developer.mozilla.org/ko/">웹</a>
+    </h2>
+    <article>
+      <h3>기초</h3>
+      <ul>
+        <li style="list-style-type: square">HTML</li>
+        <li style="list-style-type: circle">CSS</li>
+      </ul>
+
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/C06xRvXIAUk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article>
+  </header>
+  
+
+</body>
+</html>
