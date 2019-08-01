@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Music Festival</title>
+  <style>
+    td {
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+<!-- 일반적으로 보여지는 것은 div로 쓸 수 있다 -> but 우리가 이걸 쓰는 이유는 우리가 의미(역할) 부여 -->
+<body>  <!-- markdown language: 문서의 의미(역할) 부여 -->
+  <table summary="락 페스티벌 시간표이며 내부 소극장, 외부 잔디마당..."> <!-- summary: 테이블을 보지 못하는 사람들을 위해 이 테이블은 무엇을 하는것인지 설명해줄 수 있는 것! -->
+    <caption>
+      <h1>2019 타임테이블</h1>  <!-- 테이블의 제목을 명시적으로 보여줌 + 스타일도 h1과 다르게 적용 -->
+    </caption>
+    <!-- Table Head -->
+    <thead>
+      <tr>
+        <th>TIME</th>
+        <th>INDOOR</th>
+        <th colspan="2">OUTDOOR</th>
+      </tr>
+    </thead>
+
+    <!-- Table Data  -> 이 방법은 우리가 주석으로 보여줌-->
+    <tbody> <!-- 명시적으로 테그로 보여줌 -->
+      <tr>
+        <td></td>
+        <td>소극장</td>
+        <td>잔디마당</td>
+        <td>대공연장</td>
+      </tr>
+      <tr>
+        <td>10:00</td>
+        <td rowspan="2">안녕하신가영</td>
+        <td></td>
+        <td>10CM</td>
+      </tr>
+      <tr>
+        <td>13:00</td>
+        <td rowspan="2">선우정아</td>
+        <td rowspan="2">참깨와 솜사탕</td>
+      </tr>
+      <tr>
+        <td>15:00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>17:00</td>
+        <td>크러쉬</td>
+        <td></td>
+        <td>폴킴</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+</body>
+
+</html>

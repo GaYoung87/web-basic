@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- 세살버릇 여든간다 1 : '' 쓰지 말것(언제나 ""쓰기), 속성값 작성시 띄어쓰기 하지말기 -->
+<!-- 세살버릇 여든간다 2 : indenting 2칸으로 맞추기 -->
+<!-- 세살버릇 여든간다 3 : lang=ko -->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+</head>
+<body>
+<!-- action : form을 어디로 제출할 지 적어주는 곳 -->
+<!-- action에 아무것도 적지않으면 http://127.0.0.1:5500/00_html/06_form.html로 보냄 -->
+  <form action="#">
+    TEXT: <input type="text" value="이것은 값" placeholder="내용을 입력해주세요" name="jason-text"/><br> <!-- br은 개행-->
+    NUMBER: <input type="number" disabled/><br>
+    PASSWORD: <input type="password"/><br>
+    E-MAIL: <input type="email"/><br>
+    DATE: <input type="date" value="2019-08-01" name="birth-day"/><br/>
+
+    <input type="radio" name="language" value="1"/>HTML<br>
+    <input type="radio" name="language" value="2" checked/>CSS<br>  <!-- default는 checked="false" -->
+    <input type="radio" name="language" value="3"/>JS<br>
+    <hr/>
+
+    <select name="contry">
+      <option value="1">한국</option>
+      <option value="2" selected>중국</option>
+      <option value="3" disabled>일본</option>
+      <option value="4">대만</option>
+    </select><br>
+
+    <input type="checkbox" name="option" value="1">
+    <input type="checkbox" name="option" value="2"><br/>
+
+    <input type="color" value="#FF6600"><br>
+
+    <!-- 제출하기 버튼 -->
+    <input type="submit" value="제출하기"/>
+
+  </form>
+</body>
+</html>
