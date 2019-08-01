@@ -1,0 +1,30 @@
+
+h1 {
+  /* font-size: 2em; <- h1 기본 폰트 사이즈 */
+  color: darkgoldenrod;
+  /* 디폴트(16px)의 50% -> 8px 적용 */
+  font-size: 50px;
+}
+
+section {
+  /* 디폴트(16px)의 50% -> 8px 적용 */
+  font-size: 50px;
+}
+
+
+section > h2 {   /*section이 8px를 가지고 있으면*/
+  color: skyblue;
+  /* 상속의 영향 : seciton은 8px -> 8*5=40px */
+  font-size: 5em;  /*부모가 가지고 있는 font-size의 5배*/
+}
+
+ul {
+  /* 최상단에 있는 디폴트 값 -> 루트(16px)의 2배 -> 32px(상속의 영향 X)*/
+  font-size: 2rem; 
+}
+
+#box {
+  width: 50vw;
+  height: 100px;
+  background-color: blueviolet;
+}
