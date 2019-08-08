@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="07_position.css">
+</head>
+<body>
+  <div class="ground">
+      <div class="parent">
+        <div class="parent">
+          <div class="absolute">
+  ​
+          </div>
+        </div>
+      </div>
+    </div>
+  <h1>1. Static</h1> <!-- 움직임 없는 static -->
+  <div class="box">static</div>
+  <div class="box">static</div>
+
+  <h1>2. Relative</h1>  <!-- 절대적인 위치를 잡으려면 absolute 쓰면 오케이 -->
+  <div class="parent">  <!--parent : static요소-->
+    <div class="absolute box">  <!-- static 포지션은 동일!! -> body의 margin때문에 조금 차이나게 나옴. 초기화 시킨후의 약간의 차이 -> border의 차이 -->
+      absolute<!-- absolute는 기준점 필요 -> 자기 위에있는 static한 요소 찾기 -> 내 static을 따라 가기!-->
+    </div>
+  </div>
+  <div class="relative box">
+    relative
+  </div>
+  <div class="fixed box">
+    fixed
+  </div>
+
+  <h1>3. Float</h1>
+  <div>
+    <img src="http://lorempixel.com/400/200/" alt="">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+
+
+
+
+</body>
+</html>

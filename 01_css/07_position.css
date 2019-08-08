@@ -1,0 +1,53 @@
+body {
+  margin: 0px;
+}
+
+
+.box {
+  width: 50px;
+  height: 50px;
+  border: solid;
+  background-color: darksalmon;
+}
+
+
+.relative {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  background-color: aquamarine;
+}
+
+
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+
+.parent {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: cyan
+}
+
+
+/* 설정안되면 static이 디폴트값. */
+.ground {
+  width: 100px;
+  height: 100px;
+}
+
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+
+img {
+  float: right;
+}

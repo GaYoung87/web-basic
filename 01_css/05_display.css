@@ -1,0 +1,28 @@
+/* li {
+    display: inline;   # inline은 여백 설정 못함. 원래는 리스트별로 나왔는데, display: inline;하면 가로로 연속해서 나옴
+  }  # 즉, 디폴트 값이 block인데, 수정가능*/ 
+
+
+/* CSS reset */
+/*h1 {
+    margin: 0px;  # 이걸 하면 margin을 0으로 고칠 수 있다(주황색 없애기!)
+                  # margin없애도 조그만 빈공간있음 -> 이는 body의 margin! -> body{margin: 0px}
+  }  */
+
+/* 가시성을 높이기 위해서 기본적인 여백을 둠 */
+
+li {
+  display: inline-block;/* inline-block : 기본적으로 inline but width, height, margin-top, margin-bottom 지정 가능!! */
+  margin: 20px;  /* 4방향 다 지정한 것이지만, 좌우만 가능! -> top, bottom은 지정 못함!!!*/
+  padding: 20px;  /* 4방향 다 지정 가능! -> 요소 값을 잘못 지정하면 다른 테그와 겹칠 수도 있음!*/
+} 
+
+
+#bye {
+  display: none;  /* 둘다 사라짐 -> 아예 요소 자체가 없어짐. (자기 공간 사라짐) -> 시험가능!*/
+}
+
+
+#hollow {
+  visibility: hidden;  /* 둘다 사라짐 -> 눈에 보이지 않을뿐, 사라지는 것은 아님.(자기 공간 유지) */
+}

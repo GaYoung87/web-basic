@@ -1,0 +1,32 @@
+/* body {
+  background-image: url(https://www.dpreview.com/files/p/articles/9312839751/unsplash1.jpeg);
+  background-size: cover;  /* background-size: 100%;  -> 이때 폭, 너비(100%, 100%) -> 2번째 인자는 보통 적지 말아라,,
+  /* device 때문에 완전 일정할 수 없음! -> cover나 100% 많이 사용! default는 auto -> 사진이 여러개로 나옴!*/
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  /* background-size: contain;    # 픽셀단위로 쪼개져있게 보임 
+}*/
+
+
+body {
+  font-family: 'Shadows Into Light', cursive;
+ }   /* body에만 설정했는데, 다 글자가 바뀌는 이유는 CSS라는 이름때문! body에서 정한 것이 있다면, h1, p에도 적용됨(기본적으로) -> 부모-자식 */
+ /* if 모든 곳에서 사용하고 싶다면 body대신 * 적으면 ok */
+
+p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+span {
+  font-size: 150%;
+  font-family: 'Courier New';  /* snas-serif와serif 둘 다 지원하면 골라 사용 가능!*/
+  font-weight: bold;  /* bolder 지원하는 폰트있고, 없고 */
+}
+
+/* 위에것과 같음 */
+span {
+  font: 'Courier New', 2rem, bold;  /* family와 size는 반드시 값이 들어가야함 */
+  border: 2px;
+}

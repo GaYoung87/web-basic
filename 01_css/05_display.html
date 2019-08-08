@@ -1,0 +1,48 @@
+<!DOCTYPE html>  <!-- 디버깅이 힘들다,, -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="05_display.css">
+</head>
+<body>  <!-- h1 태그는 자기 컨텐츠 + 아래위로 마진(주황색) 기본값을 가지고 있음. -->
+  <!-- margin collapsing -> 상하의 경우에는 브라우저가 알아서 margin 합쳐버림 -> -->
+  <h1>1. block 레벨 element</h1>  <!-- 한 줄을 다 차지! -> 다음 요소들이 그 아래줄로 온다-->
+  <h2>h계열의 태그</h2>
+  <p>p태그</p>
+  <div>div태그</div>  <!-- 해당 영역을 구분하기 위해서-->
+  <form action="">form 태그</form>
+  <ul>   <!-- ul은 block이고, unordered 라는 속성을 가지고 있음 -->
+    <li>항상 새로운 라인에서 시작한다.</li>   <!-- ul>li*3 : > 는 depth를 들어가는것, 바로 자기 자식을 말하는 것 -->
+    <li>화면 크기 전체의 가로폭을 차지한다.</li>
+    <li>inline을 포함할 수 있다.</li>
+  </ul>
+
+  <h1>2. inline 레벨 element</h1>  <!-- 인라인은 여백설정 못함-->
+  <p>inline요소는 한 줄에 표시되며, width, height, margin-top, margin-bottom 사용 불가!</p>
+  <a href="#">a 태그</a>
+  <span>span 태그</span>
+  <input type="text">
+  <input type="date">
+  <input type="submit">
+  <img src="#" alt="이미지">  <!-- 자기 컨텐츠 영역만큼만 자리 차지! -->
+
+  <h1>3. inline-block 레벨 element</h1>  <!-- inline이 하지 못하는 것들을 다 해줌 -->
+  <ol>
+    <li>inline이지만, block에서 활용되는 속성을 활용할 수 있다.</li>
+    <li>width, height, margin-top, margin-bottom 값을 적용할 수 있다.</li>
+    <li></li>
+  </ol>
+
+
+  <h1>4. none</h1>
+  <p>요소를 사라지게 만든다.(없앤다)</p>
+
+  <p id="bye">이건 곧 사라질 예정</p>
+  <p id="hollow">이건 투명인간</p>
+  <p>얘는 투명인간 밑에 있음</p>
+
+</body>
+</html>
